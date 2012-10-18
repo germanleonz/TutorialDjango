@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Choice	admin.py	/^from polls.models import Poll, Choice$/;"	i
+Choice	models.py	/^class Choice(models.Model):$/;"	c
+ChoiceInline	admin.py	/^class ChoiceInline(admin.TabularInline):$/;"	c
+HttpResponse	views.py	/^from django.http import HttpResponse$/;"	i
+Poll	admin.py	/^from polls.models import Poll, Choice$/;"	i
+Poll	models.py	/^class Poll(models.Model):$/;"	c
+PollAdmin	admin.py	/^class PollAdmin(admin.ModelAdmin):$/;"	c
+SimpleTest	tests.py	/^class SimpleTest(TestCase):$/;"	c
+TestCase	tests.py	/^from django.test import TestCase$/;"	i
+__unicode__	models.py	/^    def __unicode__(self):$/;"	m	class:Choice	file:
+__unicode__	models.py	/^    def __unicode__(self):$/;"	m	class:Poll	file:
+admin	admin.py	/^from django.contrib import admin$/;"	i
+choice_text	models.py	/^    choice_text = models.CharField(max_length=200)$/;"	v	class:Choice
+date_hierarchy	admin.py	/^    date_hierarchy = 'pub_date'$/;"	v	class:PollAdmin
+datetime	models.py	/^import datetime$/;"	i
+detail	views.py	/^def detail(request, poll_id):$/;"	f
+extra	admin.py	/^    extra = 3 $/;"	v	class:ChoiceInline
+fieldsets	admin.py	/^    fieldsets = [$/;"	v	class:PollAdmin
+index	views.py	/^def index(request):$/;"	f
+inlines	admin.py	/^    inlines = [ChoiceInline]$/;"	v	class:PollAdmin
+list_display	admin.py	/^    list_display = ('question', 'pub_date', 'was_published_recently')$/;"	v	class:PollAdmin
+list_filter	admin.py	/^    list_filter = ['pub_date']$/;"	v	class:PollAdmin
+model	admin.py	/^    model = Choice $/;"	v	class:ChoiceInline
+models	models.py	/^from django.db import models$/;"	i
+patterns	urls.py	/^from django.conf.urls import patterns, url$/;"	i
+poll	models.py	/^    poll = models.ForeignKey(Poll)$/;"	v	class:Choice
+pub_date	models.py	/^    pub_date = models.DateTimeField('date published')$/;"	v	class:Poll
+question	models.py	/^    question = models.CharField(max_length=200)$/;"	v	class:Poll
+results	views.py	/^def results(request, poll_id ):$/;"	f
+search_fields	admin.py	/^    search_fields = ['question']$/;"	v	class:PollAdmin
+test_basic_addition	tests.py	/^    def test_basic_addition(self):$/;"	m	class:SimpleTest
+timezone	models.py	/^from django.utils import timezone$/;"	i
+url	urls.py	/^from django.conf.urls import patterns, url$/;"	i
+urlpatterns	urls.py	/^urlpatterns = patterns('',$/;"	v
+views	urls.py	/^from polls import views$/;"	i
+vote	views.py	/^def vote(request, poll_id):$/;"	f
+votes	models.py	/^    votes = models.IntegerField()$/;"	v	class:Choice
+was_published_recently	models.py	/^    def was_published_recently(self):$/;"	m	class:Poll
